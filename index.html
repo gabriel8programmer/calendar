@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="./assets/css/styles.min.css">
+</head>
+<body>
+
+    <div class="container-calendar">
+        
+        <div class="container-year">
+            <select>
+                <option value="2023">2024</option>
+                <option value="2023">2023</option>
+            </select>
+        </div>
+
+        <div class="header-calendar">
+            <div class="container-month">
+                <span class="btn-month btn-prev">&lt;</span>
+                <span class="text-month">month</span>
+                <span class="btn-month btn-next">&gt;</span>
+            </div>
+            <div class="container-days-week">
+                <span>D</span>
+                <span>S</span>
+                <span>T</span>
+                <span>Q</span>
+                <span>Q</span>
+                <span>S</span>
+                <span>S</span>
+            </div>
+        </div>
+
+        <div class="days-container">
+            <!--insert days-->
+        </div>
+
+    </div>
+
+    <script>
+
+        const containerYear = document.querySelector(".container-year select");
+        const daysContainer = document.querySelector(".days-container");
+
+        //insert years
+        
+
+        //insert days
+        for (let c = 0; c < 35; c++){
+            const span = document.createElement("span");
+            span.classList.add("day");
+            span.innerText = "x";
+            daysContainer.appendChild(span);
+        }
+
+    </script>
+
+</body>
+</html>
